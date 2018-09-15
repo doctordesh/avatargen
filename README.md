@@ -38,29 +38,29 @@ Usage: avatargen [ <flags-and-options> ] <output-directory>
 `$ avatargen -size 16 -scale 10 images`
 
 ![alt text](./doc/example-16-1.png)
+![alt text](./doc/example-16-2.png)
+![alt text](./doc/example-16-3.png)
 ![alt text](./doc/example-16-4.png)
-![alt text](./doc/example-16-6.png)
-![alt text](./doc/example-16-7.png)
-![alt text](./doc/example-16-8.png)
+![alt text](./doc/example-16-5.png)
 
 ### Black and white in size 32
 
 `$ avatargen -size 32 -scale 5 images`
 
 ![alt text](./doc/example-32-1.png)
+![alt text](./doc/example-32-2.png)
 ![alt text](./doc/example-32-3.png)
+![alt text](./doc/example-32-4.png)
 ![alt text](./doc/example-32-5.png)
-![alt text](./doc/example-32-6.png)
-![alt text](./doc/example-32-8.png)
 
 ### Specified background and foreground color in size 8
 
 `$ avatargen -size 8 -scale 20 -steps 30 -color-foreground CA5D00 -color-background 124853 images`
 
 ![alt text](./doc/example-8-1.png)
+![alt text](./doc/example-8-2.png)
 ![alt text](./doc/example-8-3.png)
 ![alt text](./doc/example-8-4.png)
 ![alt text](./doc/example-8-5.png)
-![alt text](./doc/example-8-6.png)
 
 
