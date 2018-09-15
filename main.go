@@ -16,8 +16,8 @@ func main() {
 	var size, scale, steps, count int
 	var foregroundColor, backgroundColor string
 	var alpha float64
-	flag.IntVar(&size, "size", 32, "The size of the icon (not in pixels, see 'scale').")
-	flag.IntVar(&scale, "scale", 5, "The scale of the output image. An icon with 'size' 32 and 'scale' 1 will measure 32x32 pixels. An icon with 'size' 32 and 'scale' 2 will measure 64x64 pixels.")
+	flag.IntVar(&size, "size", 16, "The size of the icon (not in pixels, see 'scale').")
+	flag.IntVar(&scale, "scale", 10, "The scale of the output image. An icon with 'size' 32 and 'scale' 1 will measure 32x32 pixels. An icon with 'size' 32 and 'scale' 2 will measure 64x64 pixels.")
 	flag.IntVar(&steps, "steps", 100, "Number of steps to take when drawing the image.")
 	flag.IntVar(&count, "count", 100, "Number of images to generate.")
 	flag.Float64Var(&alpha, "alpha", 0.9, "Alpha for the right side of the icon.")

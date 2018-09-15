@@ -22,7 +22,7 @@ func (ig *ImageGenerator) Generate(count int, destination string) {
 	for i := 0; i < count; i++ {
 		img_data := ig.GenerateImage()
 		img := ig.DrawImage(img_data)
-		err := ig.Output(img, fmt.Sprintf("%s/icon-%d.png", destination, i+1))
+		err := ig.Output(img, fmt.Sprintf("%s/avatar-%d.png", destination, i+1))
 		if err != nil {
 			panic(err)
 		}
@@ -44,30 +44,16 @@ func (ig *ImageGenerator) GenerateImage() [][]uint8 {
 	data[pos.X][pos.Y] = 1
 
 	for i := 0; i < ig.Steps; i++ {
-		// tested_directions = SetOfDirections{}
-
-		// for tested_directions.Len() < 8 {
 		for {
 			potential_direction := RandomDirection()
-			// if tested_directions.Contains(potential_direction) {
-			// 	continue
-			// }
-
 			potential_position, err := MovePointInDirection(pos, potential_direction, min_x, min_y, max_x, max_y)
 			if err != nil {
-				// tested_directions.Add(potential_direction)
 				continue
 			}
-
-			// if data[potential_position.X][potential_position.Y] > 0 {
-			// 	// tested_directions.Add(potential_direction)
-			// 	continue
-			// }
 
 			pos = potential_position
 			break
 		}
-		// }
 
 		data[pos.X][pos.Y] = 1
 	}
