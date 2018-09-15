@@ -33,7 +33,7 @@ Usage: avatargen [ <flags-and-options> ] <output-directory>
 
 ## Examples
 
-### Black and white in size 16
+### White on Black in size 16
 
 `$ avatargen -size 16 -scale 10 images`
 
@@ -43,15 +43,15 @@ Usage: avatargen [ <flags-and-options> ] <output-directory>
 ![alt text](./doc/example-16-4.png)
 ![alt text](./doc/example-16-5.png)
 
-### Black and white in size 32
+### Black on White in size 32 without transparency
 
-`$ avatargen -size 32 -scale 5 images`
+`$ avatargen -size 20 -color-background ffffff -color-foreground 000000 -alpha 1 -steps 200 images`
 
-![alt text](./doc/example-32-1.png)
-![alt text](./doc/example-32-2.png)
-![alt text](./doc/example-32-3.png)
-![alt text](./doc/example-32-4.png)
-![alt text](./doc/example-32-5.png)
+![alt text](./doc/example-20-1.png)
+![alt text](./doc/example-20-2.png)
+![alt text](./doc/example-20-3.png)
+![alt text](./doc/example-20-4.png)
+![alt text](./doc/example-20-5.png)
 
 ### Specified background and foreground color in size 8
 
