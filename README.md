@@ -1,8 +1,8 @@
 # Avatargen
 
-Are you running some kind of webservice where users can upload a profile picture but manyare missing? Are you tired of looking at the same default avatar? Good, you are in the right place"
+Are you running some kind of webservice where users can upload a profile picture but many are missing? Are you tired of looking at the same default avatar? Good, you are in the right place!
 
-Based on a random walk, `avatargen` will build avatars for you! There's always one point of border for stylish reasons. 
+Based on a random walk, `avatargen` will create interesting placeholder avatars for you!
 
 ## Installation
 
