@@ -16,19 +16,19 @@ Run the `avatargen` from the command line.
 Usage: avatargen [ <flags-and-options> ] <output-directory>
 
   -alpha float
-    	Alpha for the right side of the icon. (default 0.9)
+      Alpha for the right side of the icon. (default 0.9)
   -color-background string
-    	Background color, format <rrggbb> in hex. (default "000000")
+      Background color, format <rrggbb> in hex. (default "000000")
   -color-foreground string
-    	Foreground color, format <rrggbb> in hex. (default "FFFFFF")
+      Foreground color, format <rrggbb> in hex. (default "FFFFFF")
   -count int
-    	Number of images to generate. (default 100)
+      Number of images to generate. (default 100)
   -scale int
-    	The scale of the output image. An icon with 'size' 32 and 'scale' 1 will measure 32x32 pixels. An icon with 'size' 32 and 'scale' 2 will measure 64x64 pixels. (default 5)
+      The scale of the output image. An icon with 'size' 32 and 'scale' 1 will measure 32x32 pixels. An icon with 'size' 32 and 'scale' 2 will measure 64x64 pixels. (default 10)
   -size int
-    	The size of the icon (not in pixels, see 'scale'). (default 32)
+      The size of the icon (not in pixels, see 'scale'). (default 16)
   -steps int
-    	Number of steps to take when drawing the image. (default 100)
+      Number of steps to take when drawing the image. (default 100)
 ```
 
 ## Examples
@@ -43,9 +43,9 @@ Usage: avatargen [ <flags-and-options> ] <output-directory>
 ![alt text](./doc/example-16-4.png)
 ![alt text](./doc/example-16-5.png)
 
-### Black on White in size 32 without transparency
+### Black on White in size 20 without transparency
 
-`$ avatargen -size 20 -color-background ffffff -color-foreground 000000 -alpha 1 -steps 200 images`
+`$ avatargen -size 20 -scale 8 steps 200 -color-background ffffff -color-foreground 000000 -alpha 1 -images`
 
 ![alt text](./doc/example-20-1.png)
 ![alt text](./doc/example-20-2.png)
